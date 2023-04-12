@@ -31,7 +31,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_ValidNichols()
         {
             Assert.AreEqual(4, Program.Subtract("5", "1"));
             Assert.AreEqual(7, Program.Subtract("5", "-2"));
@@ -39,7 +39,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_InvalidNichols()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -47,7 +47,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_NullNichols()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -55,7 +55,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_ValidNichols()
         {
             Assert.AreEqual(5, Program.Multiply("5", "1"));
             Assert.AreEqual(-10, Program.Multiply("5", "-2"));
@@ -63,7 +63,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_InvalidNichols()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -71,7 +71,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_NullNichols()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -79,7 +79,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Valid()
+        public void Divide_ValidNichols()
         {
             Assert.AreEqual(-1, Program.Divide("-5", "5"));
             Assert.AreEqual(2.5, Program.Divide("5", "2"));
@@ -87,7 +87,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_InvalidNichols()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -95,7 +95,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_NullNichols()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -103,7 +103,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Valid()
+        public void Power_ValidNichols()
         {
             Assert.AreEqual(8, Program.Power("2", "3"));
             Assert.AreEqual(0.25, Program.Power("0.5", "2"));
@@ -111,7 +111,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_InvalidNichols()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -119,7 +119,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_NullNichols()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
